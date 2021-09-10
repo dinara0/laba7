@@ -211,5 +211,33 @@ namespace laba7
             buttonCircle.Enabled = false;
             buttonTriangle.Enabled = false;
         }
+
+        private void buttonGroup_Click(object sender, EventArgs e)
+        {/*
+            int count = 0;
+            if (storage.get_count() != 0)
+                for (int i = 0; i < storage.get_count(); ++i)
+                { //Если объект существует и окрашен в цвет выбранных объектов,то происходит..
+                    if (storage.Empty(i) == false && storage.get_value(i).LineColor == Color.Red)
+                    {
+
+                        count++;
+
+                    }
+                }
+            CGroup group = new CGroup(count);
+            int j = 0;
+            if (storage.get_count() != 0)
+                for (int i = 0; i < storage.get_count(); ++i)
+                { //Если объект существует и окрашен в цвет выбранных объектов,то происходит..
+                    if (storage.Empty(i) == false && storage.get_value(i).LineColor == Color.Red)
+                    {
+                        group.AddFigure(storage.get_value(j));
+                        storage.delete_value(i);
+                        j++;
+                    }
+                }*/
+
+        }
     }
 }

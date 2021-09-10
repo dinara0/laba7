@@ -36,6 +36,78 @@ namespace laba7
 
 
         }
+
+        /*public class CGroup: Figure
+        {
+            private int _maxcount;// максимальное количество объектов в группе
+            private int _count;// текущее количество объектов в группе
+            private Figure[] _figures;
+            public CGroup(int maxcount)
+            {
+                _maxcount = maxcount;
+                _count = 0;
+                for (int i = 0; i < _maxcount; i++)
+                    _figures[i] = null;
+            }
+            ~CGroup()
+            {
+                for (int i = 0; i < _count; i++) // очищаем массив ссылок
+                    _figures[i] = null; //
+                _figures = null;// очищаем сам массив
+            }
+
+            public bool AddFigure(Figure figure)
+            {
+                if (_count >= _maxcount)
+                    return false;
+                _count++;
+                _figures[_count - 1] = figure;
+                return true;
+
+            }
+            public override void Move(int a, int b)
+            {
+                for (int i = 0; i < _count; i++)
+                    _figures[i].Move(a,b);
+            }
+            public override void Draw(Graphics g)
+            {
+                for (int i = 0; i < _count; i++)
+                    _figures[i].Draw(g);
+            }
+            public override GraphicsPath GetPath()
+            {
+                var path2 = new GraphicsPath();
+                for (int i = 0; i < _count; i++)
+                    _figures[i].GetPath();
+                return path2;
+            }
+
+            public override bool HitTest(Point p)
+            {
+                var result = false;
+                for (int i = 0; i < _count; i++)
+                    using (var path = _figures[i].GetPath())
+                        if (result = path.IsVisible(p)) //если попали хотя бы в один объект
+                            result = true;
+                   
+                return result;
+            }
+            public override bool IsBlackboard()
+            {
+                for (int i = 0; i < _count; i++)
+                   if( _figures[i].IsBlackboard())// если хотя бы один объект вышел за пределы 
+                        return false;
+                return true;
+            }
+
+            public override void Resize(int a)
+            {
+                for (int i = 0; i < _count; i++)
+                    _figures[i].Resize(a);
+            }
+        }*/
+
         public class Circle : Figure
         {
             public int D = 100; //Задаем диагональ

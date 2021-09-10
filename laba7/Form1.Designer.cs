@@ -39,6 +39,7 @@ namespace laba7
             this.buttonLine = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.buttonGroup = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -141,11 +142,22 @@ namespace laba7
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // buttonGroup
+            // 
+            this.buttonGroup.Location = new System.Drawing.Point(302, 567);
+            this.buttonGroup.Name = "buttonGroup";
+            this.buttonGroup.Size = new System.Drawing.Size(130, 53);
+            this.buttonGroup.TabIndex = 5;
+            this.buttonGroup.Text = "группировать";
+            this.buttonGroup.UseVisualStyleBackColor = true;
+            this.buttonGroup.Click += new System.EventHandler(this.buttonGroup_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1251, 635);
+            this.Controls.Add(this.buttonGroup);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ShowColor_button);
@@ -173,6 +185,7 @@ namespace laba7
         private System.Windows.Forms.Button buttonLine;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button buttonGroup;
     }
 }
 
